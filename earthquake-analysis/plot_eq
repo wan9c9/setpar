@@ -1,0 +1,4 @@
+plot 'PoiAR_obs_forecasts_residuals.dat' u 0:1 w l notitle, \
+'' u 0:2 w lp lt 2 pt 2 notitle, \
+'tpar_data_and_fitted.dat' u 0:2 w lp lt 4 pt 4 notitle
+

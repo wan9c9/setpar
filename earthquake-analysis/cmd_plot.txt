@@ -1,0 +1,6 @@
+set title "GNUFOR plot"
+set xlabel "x"
+set ylabel "y"
+plot "data_plot.txt" using 1:2 with lp 
+pause -1
+q
