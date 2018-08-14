@@ -1,0 +1,114 @@
+
+R version 2.13.1 (2011-07-08)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> liklinear.poisson <- function(theta, data)
++ {
++ lambda=rep(NA, times=length(data))
++ loglik=rep(NA, times=length(data))
++ lambda[1]=0
++ loglik[1]=0
++ for (t in 2:length(data)){
++      lambda[t]=theta[1]+theta[2]*lambda[t-1]+theta[3]*data[t-1]
++      if (lambda[t]==0) loglik[t] <- 0 else
++      if (lambda[t] >0) loglik[t] <- -data[t]*log(lambda[t])+lambda[t]
++ }
++ final=sum(loglik)
++ }
+> 
+> #####################################
+> ##############Score Function for the Linear Model
+> 
+> scorelinear.poisson <- function(theta, data)
++ {
++ lambda=rep(NA, times=length(data))
++ lambda[1]=0
++ first=rep(NA, times=length(data))
++ first[1]=0
++ second=rep(NA, times=length(data))
++ second[1]=0
++ third=rep(NA, times=length(data))
++ third[1]=0
++ s1=rep(NA, times=length(data))
++ s2=rep(NA, times=length(data))
++ s3=rep(NA, times=length(data))
++ for (t in 2:length(data))
++ {
++ lambda[t]=theta[1]+theta[2]*lambda[t-1]+theta[3]*data[t-1]
++ first[t]= (1+theta[2]*first[t-1])
++ second[t]=(lambda[t-1]+theta[2]*second[t-1])
++ third[t]=(data[t-1]+theta[2]*third[t-1])
++ s1[t]=-( (data[t]/lambda[t])-1)*first[t]
++ s2[t]=-( (data[t]/lambda[t])-1)*second[t]
++ s3[t]=-( (data[t]/lambda[t])-1)*third[t]
++ }
++ ss1=sum(s1[-1])
++ ss2=sum(s2[-1])
++ ss3=sum(s3[-1])
++ score=c(ss1,ss2,ss3)
++ }
+> 
+> 
+> ######################Information Matrix
+> ##################################################
+> information.poisson <- function(theta, data)
++ {
++ lambda=rep(NA, times=length(data))
++ lambda[1]=theta[1]
++ first=rep(NA, times=length(data))
++ first[1]=0
++ second=rep(NA, times=length(data))
++ second[1]=0
++ third=rep(NA, times=length(data))
++ third[1]=0
++ Information <- matrix(0, nrow=3, ncol=3)
++ s1=rep(NA, times=length(data))
++ s2=rep(NA, times=length(data))
++ s3=rep(NA, times=length(data))
++ for (t in 2:length(data))
++ {
++ lambda[t]=theta[1]+theta[2]*lambda[t-1]+theta[3]*data[t-1]
++ first[t]= (1+theta[2]*first[t-1])
++ second[t]=(lambda[t-1]+theta[2]*second[t-1])
++ third[t]=(data[t-1]+theta[2]*third[t-1])
++ s1[t]= first[t]####-( (data[t]/lambda[t])-1)*first[t]
++ s2[t]= second[t]####-( (data[t]/lambda[t])-1)*second[t]
++ s3[t]= third[t]#####-( (data[t]/lambda[t])-1)*third[t]
++ var.comp= (1/sqrt(lambda[t]))*c(s1[t], s2[t], s3[t])
++ Information=Information+var.comp%*%t(var.comp)
++ }
++ return(Information)
++ }
+> 
+> 
+> obs <- read.table("./obs.dat",header=FALSE)
+> y <- obs$V1
+> 
+> r1=arima(y, order=c(1,0,1), method="CSS")
+> phi=r1$coef[1]
+> theta=r1$coef[2]
+> mu=sigma2=r1$coef[3]
+> start=c(mu*(1-phi), sigma2*(1-phi), -theta, (phi+theta))
+> out=optim(liklinear.poisson, p=start[2:4], data=y, 
++            scorelinear.poisson , method="BFGS", hessian=T)
+> par <- out$par
+> write(par, "epa11_par.dat")
+> write(-out$value, "epa11_llk.dat")
+> 
+> 
