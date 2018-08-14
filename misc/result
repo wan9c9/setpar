@@ -1,0 +1,636 @@
+Estimated parameters by R:    2.4959    0.5276    0.4039
+Estimated LLK by R (averaged):   96.7718
+Estimated LLK by fortran (averaged):   96.9014
+ Summary of results: PoiAR:
+Estimated parameters:    2.0831    0.5801    0.3618
+ averaged LLK=   96.9049489429016     
+ AIC=  -178299.106054939     
+ BIC=  -178284.632933929     
+ ESTIMATED PARAMETERS USING ANALYTIC GRADIENTS:
+   2.08309256048276       0.580064769548896       0.361757180818819     
+averaged LLK=    96.90495
+===OUTPUT OF COVERAGE_PAR===
+For the PoiAR model:
+LLK=       96.90495
+AIC=       -178105.29616
+BIC=       -178090.82630
+in-sample no. of obs:920
+in-sample mse:      148.76934
+out-of-sample no. of obs:276
+out-of-sample mse:      125.92310
+END===OUTPUT OF COVERAGE_PAR===END
+ ESTIMATED PARAMETERS USING ANALYTIC GRADIENTS:
+   2.13180557120008       0.621507899487273       0.319105566569298     
+  0.593703009535222      -0.284697231709385       0.704182631452847     
+  0.262761257810909     
+averaged LLK=    96.94874
+ Summary of results: PoiAR with trend:
+Estimated parameters:    2.1318    0.6215    0.3191    0.5937   -0.2847    0.7042    0.2628
+===OUTPUT OF COVERAGE_PAR WITH TREND===
+For PoiAR with Fourier trend:
+LLK=    89095.89257
+AIC=  -178177.78514
+BIC=  -178144.02214
+in-sample mse:      145.30949
+out-of-sample mse:      124.11741
+END===OUTPUT OF COVERAGE_PAR WITH TREND===END
+ Since threshold is unknown, it will  be searched.
+ From           16  to           61
+ Threshold  Log-likilihood   Current_best_threshold
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              16         96.91146            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              17         96.91041            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              18         96.90851            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              19         96.91069            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              20         96.90822            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              21         96.90686            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              22         96.90676            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              23         96.90681            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              24         96.90665            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              25         96.90767            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              26         96.90729            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              27         96.90684            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              28         96.90741            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              29         96.90898            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              30         96.90892            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              31         96.90850            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              32         96.90793            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              33         96.90766            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              34         96.90757            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              35         96.90751            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              36         96.90715            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              37         96.90726            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              38         96.90691            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              39         96.90694            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              40         96.90710            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              41         96.90725            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              42         96.90830            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              43         96.91083            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              44         96.91120            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              45         96.91145            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              46         96.90986            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              47         96.90948            16
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              48         96.91222            48
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              49         96.91227            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              50         96.91002            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              51         96.90940            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              52         96.90778            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              53         96.90929            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              54         96.90926            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              55         96.90944            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              56         96.91004            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              57         96.91111            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              58         96.91072            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              59         96.90884            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              60         96.90826            49
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              61         96.90925            49
+ ===Summary of results: TPoiAR===
+ parameter estimates:
+threshold=49
+parameters for each regime:
+    2.4151    0.6128    0.3103
+    2.9519    0.5256    0.4013
+ LLK=   96.9122714817801     
+ AIC=  -178110.754983512     
+ BIC=  -178076.991980655     
+===OUTPUT OF COVERAGE_TPAR===
+For the TPoiAR model:
+IN SAMPLE NO. OF OBS:920
+in-sample mse:      147.92034
+OUT-OF-SAMPLE SAMPLE NO. OF OBS:276
+out-of-sample mse:      126.22265
+END===OUTPUT OF COVERAGE_TPAR===END
+FORTRAN PAUSE
+PAUSE prompt>  Since threshold is unknown, it will  be searched.
+ From           23  to           45
+ Threshold  Log-likilihood   Current_best_threshold
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              23         96.95461            23
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              24         96.95629            24
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              25         96.95962            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              26         96.95812            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              27         96.95566            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              28         96.95444            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              29         96.95474            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              30         96.95457            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              31         96.95361            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              32         96.95464            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              33         96.95538            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              34         96.95525            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              35         96.95634            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              36         96.95456            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              37         96.95559            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              38         96.95388            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              39         96.95289            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              40         96.95285            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              41         96.95290            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              42         96.95265            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              43         96.95395            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              44         96.95475            25
+ 
+ 
+ Calls to E04UEF
+ ---------------
+ 
+      Print Level = 0
+      Major Iteration Limit = 2000
+              45         96.95531            25
+Mean of (Y_t-lambda_t)^2:   144.556
+Mean of (Y_t-lambda_t)^2/lambda_t:     3.968
+Statistics of the Pearson residual:
+mean     0.000
+sd     1.992
+skewness     1.383
+ex. kur.     4.740
+ Estimated threshold:          25
+ Estimated LLK:   96.9596191616434     
+ Estimated AIC:  -178189.780019101     
+ Estimated BIC:  -178136.723871755     
+ Estimated paramaters and standard error:
+     4.754     0.734
+     0.524     0.035
+     0.309     0.049
+     1.673     0.380
+     0.660     0.016
+     0.295     0.014
+     0.661     0.104
+    -0.388     0.096
+     0.777     0.095
+     0.333     0.101
+For the TPoiAR with Fourier trend:
+in-sample mse:    0.14456D+03
+out-of-sample mse:    0.12407D+03
